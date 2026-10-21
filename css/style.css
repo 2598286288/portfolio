@@ -1,0 +1,207 @@
+:root {
+  --navy: #1F4E79;
+  --ink: #1a1a1a;
+  --muted: #5f6f7a;
+  --line: #AEBDC6;
+  --soft: #F3F6F8;
+  --bg: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "SimSun", "宋体", "Songti SC", serif;
+  color: var(--ink);
+  background: var(--bg);
+  font-size: 16px;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; }
+
+a { color: var(--navy); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { width: min(1120px, 92%); margin: 0 auto; }
+
+/* ---------- topbar ---------- */
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #E3EAEE;
+}
+.topbar .wrap {
+  height: 60px; display: flex; align-items: center; justify-content: space-between;
+}
+.brand {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-weight: 700; font-size: 19px; letter-spacing: 2px; color: var(--navy);
+}
+.brand span {
+  font-size: 12px; font-weight: 400; color: var(--muted); letter-spacing: 3px; margin-left: 10px;
+}
+.topbar nav { display: flex; gap: 26px; }
+.topbar nav a {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-size: 14px; color: #40515c; letter-spacing: 1px;
+}
+.topbar nav a:hover { color: var(--navy); text-decoration: none; }
+
+/* ---------- hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 56px;
+  align-items: center;
+  padding: 64px 0 56px;
+}
+.kicker {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-size: 12px; letter-spacing: 5px; color: #7b8a94;
+}
+.hero h1 {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-size: 56px; font-weight: 700; color: var(--navy);
+  letter-spacing: 8px; line-height: 1.2; margin: 10px 0 14px;
+}
+.intent {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-size: 18px; font-weight: 700; color: var(--navy);
+  letter-spacing: 1px; margin-bottom: 16px;
+}
+.meta { color: var(--muted); font-size: 15px; line-height: 1.9; }
+.cta { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-size: 15px; padding: 11px 26px; border-radius: 3px;
+  border: 1px solid var(--navy); color: var(--navy);
+  transition: all .18s ease;
+}
+.btn:hover { text-decoration: none; background: var(--soft); }
+.btn.primary { background: var(--navy); color: #fff; }
+.btn.primary:hover { background: #173d5e; border-color: #173d5e; }
+.hero-media img {
+  width: 100%; border-radius: 4px; box-shadow: 0 18px 42px rgba(20, 45, 65, 0.16);
+}
+
+/* ---------- sections ---------- */
+.section { padding: 46px 0 8px; scroll-margin-top: 76px; }
+.section h2 {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-size: 26px; font-weight: 700; color: var(--navy);
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 12px; margin-bottom: 10px;
+}
+.section h2 small {
+  font-size: 14px; font-weight: 400; color: var(--muted);
+  letter-spacing: 1px; margin-left: 14px;
+}
+.section h3 {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-size: 17px; font-weight: 700; color: var(--navy);
+  letter-spacing: 1px; margin: 26px 0 8px;
+}
+
+/* ---------- project ---------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 44px;
+  margin-top: 26px;
+  align-items: start;
+}
+.project-copy p { text-align: justify; }
+.project-copy h3:first-child { margin-top: 0; }
+.points { list-style: none; }
+.points li {
+  position: relative; padding-left: 20px; margin-bottom: 10px;
+  text-align: justify;
+}
+.points li::before {
+  content: '•'; position: absolute; left: 2px; color: var(--navy); font-weight: 700;
+}
+.points strong { color: #22384a; }
+.project-hero img { width: 100%; border-radius: 4px; border: 1px solid #E1E8EC; }
+.chips { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.chips span {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-size: 13px; color: var(--navy); background: #EDF2F6;
+  padding: 5px 12px; border-radius: 3px; letter-spacing: .5px;
+}
+.chips i { font-style: normal; color: #9aa4aa; font-size: 13px; }
+
+.gallery-title { margin-top: 40px; }
+.gallery {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 16px;
+}
+.gallery figure { background: var(--soft); border-radius: 4px; overflow: hidden; }
+.gallery img { width: 100%; height: 210px; object-fit: cover; }
+.gallery figcaption {
+  font-size: 13px; color: var(--muted); padding: 8px 12px;
+  background: #fff; border-top: 1px solid #E7EDF1;
+}
+
+/* ---------- 3d viewer ---------- */
+.viewer {
+  margin-top: 18px;
+  background: linear-gradient(180deg, #F7FAFC 0%, #EEF3F6 100%);
+  border: 1px solid #DFE7EB;
+  border-radius: 6px;
+  overflow: hidden;
+}
+model-viewer { width: 100%; height: 460px; background: transparent; }
+model-viewer::part(default-progress-bar) { background-color: var(--navy); }
+
+/* ---------- video ---------- */
+.video-box { margin-top: 18px; max-width: 900px; }
+.video-box video {
+  width: 100%; border-radius: 6px; background: #000;
+  box-shadow: 0 14px 34px rgba(20, 45, 65, 0.14);
+}
+
+/* ---------- contact ---------- */
+.contact p { font-size: 16px; }
+.contact .meta { margin-top: 10px; }
+
+/* ---------- footer ---------- */
+footer {
+  margin-top: 56px;
+  border-top: 1px solid #E7EDF1;
+  padding: 22px 0 30px;
+  color: #8a949b; font-size: 13px;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  letter-spacing: .5px;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; gap: 30px; padding: 40px 0 36px; }
+  .hero-media { order: -1; }
+  .hero h1 { font-size: 42px; }
+  .project-grid { grid-template-columns: 1fr; gap: 28px; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  model-viewer { height: 380px; }
+}
+
+@media (max-width: 620px) {
+  body { font-size: 15px; }
+  .topbar nav { gap: 14px; }
+  .topbar nav a { font-size: 13px; }
+  .brand { font-size: 17px; }
+  .brand span { display: none; }
+  .hero h1 { font-size: 36px; letter-spacing: 5px; }
+  .kicker { letter-spacing: 3px; }
+  .section h2 { font-size: 21px; }
+  .section h2 small { display: block; margin: 6px 0 0; font-size: 13px; }
+  .gallery { grid-template-columns: 1fr; }
+  .gallery img { height: 200px; }
+  model-viewer { height: 320px; }
+  .cta { gap: 10px; }
+  .btn { padding: 10px 18px; font-size: 14px; }
+}

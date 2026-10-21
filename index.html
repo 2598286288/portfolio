@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>林俊宏 · 作品集 | 结构设计工程师/机械助理工程师</title>
+<meta name="description" content="林俊宏的作品集：擒纵机构桌面玩具的自主建模、工程图、FDM 3D 打印与装配调试，含交互式 3D 模型与演示视频。">
+<meta property="og:title" content="林俊宏 · 作品集 | 结构设计工程师/机械助理工程师">
+<meta property="og:description" content="擒纵机构桌面玩具：SolidWorks 自主建模、工程图输出、FDM 打印与装配调试。">
+<meta property="og:image" content="assets/img/og-cover.jpg">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="css/style.css">
+<script type="module" src="js/model-viewer.min.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">林俊宏<span>作品集</span></a>
+    <nav>
+      <a href="#project">项目</a>
+      <a href="#model">3D 模型</a>
+      <a href="#video">演示视频</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="kicker">PORTFOLIO / 2026</p>
+      <h1>林俊宏</h1>
+      <p class="intent">求职意向：结构设计工程师/机械助理工程师</p>
+      <p class="meta">机械电子工程（本科 · 全日制）｜ 东莞城市学院 ｜ 2027 届</p>
+      <p class="meta">电话：18312343506　邮箱：2598286288@qq.com　现居：深圳</p>
+      <div class="cta">
+        <a class="btn primary" href="#project">查看项目</a>
+        <a class="btn" href="assets/portfolio.pdf" download="林俊宏-作品集.pdf">下载作品集 PDF</a>
+      </div>
+    </div>
+    <figure class="hero-media">
+      <img src="assets/img/assembled.jpg" alt="擒纵机构装配完成图">
+    </figure>
+  </section>
+
+  <section id="project" class="wrap section">
+    <h2>擒纵机构桌面玩具 <small>自主建模 · 3D 打印复刻</small></h2>
+    <p class="meta">2026.03 – 2026.06 ｜ 个人项目 ｜ SolidWorks / FDM 3D 打印（PLA）｜ 约 20 个零件</p>
+
+    <div class="project-grid">
+      <div class="project-copy">
+        <h3>项目概述</h3>
+        <p>以开源擒纵机构为设计参考，独立完成约 20 个零件的自主建模、整机装配与工程图输出，并通过 FDM 打印与装配调试，复现「发条储能 → 齿轮系减速 → 擒纵轮间歇步进」的完整传动链。</p>
+
+        <h3>技术要点</h3>
+        <ul class="points">
+          <li><strong>自主建模：</strong>对发条、多级齿轮、擒纵轮 / 擒纵叉、机架、轴销等约 20 个零件完成 SolidWorks 建模与装配约束，输出装配图及关键零件工程图</li>
+          <li><strong>传动复核：</strong>梳理发条—齿轮系—擒纵传动链路，通过装配约束与干涉检查验证机构可动性</li>
+          <li><strong>打印工艺：</strong>PLA / 0.4 mm 喷嘴，按结构件与配合件分组调参（层高 0.12–0.2 mm、填充 12–15%），处理悬垂支撑与首层附着</li>
+          <li><strong>装配调试：</strong>扩孔修正轴孔收缩，打磨齿轮毛刺改善啮合，热床调平 + 裙边解决大齿轮盘翘边</li>
+          <li><strong>成果：</strong>机构连续运行，擒纵轮实现间歇步进运动</li>
+        </ul>
+
+        <h3>工作流程</h3>
+        <div class="chips">
+          <span>自主建模</span><i>→</i><span>装配验证</span><i>→</i><span>工程图输出</span><i>→</i><span>FDM 打印</span><i>→</i><span>装配调试</span>
+        </div>
+      </div>
+
+      <figure class="project-hero">
+        <img src="assets/img/hero-render.jpg" alt="擒纵机构 SolidWorks 渲染图">
+      </figure>
+    </div>
+
+    <h3 class="gallery-title">零件与制造过程</h3>
+    <div class="gallery">
+      <figure><img src="assets/img/print-gear.jpg" loading="lazy" alt="打印齿轮"><figcaption>FDM 打印齿轮</figcaption></figure>
+      <figure><img src="assets/img/print-detail.jpg" loading="lazy" alt="打印细节"><figcaption>打印过程细节</figcaption></figure>
+      <figure><img src="assets/img/parts.jpg" loading="lazy" alt="零件清点"><figcaption>零件清点（部分）</figcaption></figure>
+      <figure><img src="assets/img/drawings.jpg" loading="lazy" alt="装配图与实物"><figcaption>装配图与实物对照</figcaption></figure>
+      <figure><img src="assets/img/assembly-wide.jpg" loading="lazy" alt="整机装配"><figcaption>整机装配</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="model" class="wrap section">
+    <h2>交互式 3D 模型</h2>
+    <p class="meta">拖动旋转 · 滚轮 / 双指缩放 · 右下角可全屏；模型由 SolidWorks 装配体导出，约 20 个零件、分件配色</p>
+    <div class="viewer">
+      <model-viewer src="assets/model/escapement.glb?v=4"
+        poster="assets/img/hero-render.jpg"
+        camera-controls
+        auto-rotate
+        rotation-per-second="16deg"
+        camera-orbit="-25deg 68deg auto"
+        touch-action="pan-y"
+        shadow-intensity="0.6"
+        exposure="1.05"
+        alt="擒纵机构 3D 装配模型"
+        loading="lazy">
+      </model-viewer>
+    </div>
+  </section>
+
+  <section id="video" class="wrap section">
+    <h2>演示视频</h2>
+    <p class="meta">擒纵机构连续运行，擒纵轮实现间歇步进（19 秒）</p>
+    <div class="video-box">
+      <video controls playsinline preload="metadata" poster="assets/video/poster.jpg">
+        <source src="assets/video/demo.mp4" type="video/mp4">
+        你的浏览器不支持视频播放。
+      </video>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap section contact">
+    <h2>联系方式</h2>
+    <p>电话：<a href="tel:18312343506">18312343506</a>　邮箱：<a href="mailto:2598286288@qq.com">2598286288@qq.com</a>　现居：深圳</p>
+    <p class="meta">作品集 PDF：<a href="assets/portfolio.pdf" download="林俊宏-作品集.pdf">点击下载</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 林俊宏 · 结构设计工程师/机械助理工程师</div>
+</footer>
+
+</body>
+</html>
